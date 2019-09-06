@@ -20,7 +20,7 @@ class LogsController extends CBController
         $this->col = [];
         $this->col[] = ["label" => "Time Access", "name" => "created_at"];
         $this->col[] = ["label" => "IP Address", "name" => "ipaddress"];
-        $this->col[] = ["label" => "User", "name" => "id_cms_users", "join" => config('crudbooster.USER_TABLE').",name"];
+        $this->col[] = ["label" => "User", "name" => "id_cms_users", "join" => config('crudbooster.USER_TABLE').",first_name"];
         $this->col[] = ["label" => "Description", "name" => "description"];
 
         $this->form = [];
